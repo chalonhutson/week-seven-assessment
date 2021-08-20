@@ -1,0 +1,26 @@
+1.
+
+Continuous integration tool: Jenkins - https://www.jenkins.io/
+
+Real-time Error Monitoring: Raygun - https://raygun.com/platform/real-user-monitoring
+
+2.
+
+The value add of Jenkins, first and foremost is that it is open-source, so the development community will continue to make improvements to it so it continues to become a better tool. There are also plenty of plugins so that it can easily fit into our already preexisting code and tools.
+
+For raygun, it isn't free, but is rather an inexpensive so it's not a big risk. It has real time monitoring of not just custom errors you build into the code, but also can automatically update when a user hits an error on the site, when and where, so we can have an idea of where to debug.
+
+
+3.
+
+There are a ton of resources not just on the Jenkins site (which might not have as much as others since it is an open source project) but elsewhere as well. There is, on the site, a walkthrough tutorial, that let's you download a test project and step by step set up a CI project, which is great.
+
+With Raygun, it has prebuilt code to help fit into just about any language we are using. For Node, there is a few lines of code we can copy in if we are using Heroku, and help with using the AWS API if we choose that route. The module is easy to install, and requires three lines of code, including exporting our Raygun key to ensure our code and the site are communicating properly. with that being said there are beyond enough instructions and documentation to help us figure out how to maximize this tool for our company.
+
+
+4.
+
+Jenkins has been around for a while, with the initial code being created in 2004, by a developer who was tired of being yelled by his team for their code breaking. Eventually the project got funding from the "CD Foundation" which has several premiere members like Google and Netflix giving them money. (Along with CircleCI which is interesting.) Also some "End User Members" like Ebay, Capital One, JP Morgan Chase. That being said, despite it being open source, Jenkins has some backing behind it to ensure the project keeps rolling forward.
+
+
+Ray gun was founded in 2007, and seemed to be a simple single-use monitoring software at first, and when that saw success, they decided to expand and become a full-fledged monitoring and "software intelligence" company. They brag about several large companies that use them, like HBO and Dominos.

@@ -1,0 +1,27 @@
+2.
+The insert took significantly longer. 845ms vs 3ms.
+
+3.
+
+With large array (Insert vs Append)
+8ms vs .627ms
+
+With medium array
+.189ms vs .148ms
+
+With small array
+.048ms vs .089ms
+
+With tiny array
+.044ms vs .082ms
+
+
+4.
+So it appears the append is significantly faster than the insert with arrays larger than 1000, and exponentially moreso as the array gets larger. With small arrays, the insert is slightly faster, meaning if you absolutely knew that you were dealing with an array size of 100 or less, maybe you were choose insert over append.
+
+However, if you were building a function to scale with an indetermined amount of data that could possibly be thousands or more elements in length, you would really benefit from using the append, as it get more efficient with each element added to an array, while the insert gets severely less efficient. (Also using the term append to mean the JS array method ".push" and the Insert refers to ".unshift".)
+
+Extra credit:
+It seems that the reason append or .push is siginificantly faster with scale, is all the operation is doing is added the new element to the end of an array. So whatever the last index is, it will add one and place the element there.
+
+Insert or unshift however, has to go through the process of reassigning all of the indexes for every element to +1, because it will add the element to index zero of the list. Which means the computer must go and make what was at index zero at index 1, index 1 to index 2, and when you have to do this 10k times, it is signficantly faster than just placing an element to the end of the array.
